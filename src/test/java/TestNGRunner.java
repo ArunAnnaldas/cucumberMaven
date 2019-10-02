@@ -5,11 +5,12 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		 features = "src/test/resources/features"
-		 ,tags= {"@checkBalance, @optExtraServices"}
+		 ,tags= {"@checkBalance or @optExtraServices"}
 		 ,glue="com/stepDefinitions"
 		 ,monochrome=true
 		 ,plugin= {
@@ -19,6 +20,6 @@ import cucumber.api.junit.Cucumber;
 		 ,strict=false
 		 ,snippets=SnippetType.CAMELCASE
 		 )
-public class Runner{
+public class TestNGRunner extends AbstractTestNGCucumberTests{
 
 }

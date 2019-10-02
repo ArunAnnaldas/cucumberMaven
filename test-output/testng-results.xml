@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="1952" started-at="2019-10-02T07:22:39Z" finished-at="2019-10-02T07:22:41Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestNGRunner@343f4d3d]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="MyTests" duration-ms="1952" started-at="2019-10-02T07:22:39Z" finished-at="2019-10-02T07:22:41Z">
+      <class name="TestNGRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestNGRunner@343f4d3d]" name="setUpClass" is-config="true" duration-ms="156" started-at="2019-10-02T07:22:39Z" finished-at="2019-10-02T07:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestNGRunner@343f4d3d]" name="runScenario" duration-ms="1503" started-at="2019-10-02T07:22:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to check the balance amount successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to check the balance linked to their bank account"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.assertj.core.api.SoftAssertionError">
+            <message>
+              <![CDATA[
+The following 2 assertions failed:
+1) expected:<"B[Sum]mary"> but was:<"B[ankSu]mary">
+at BalanceEnquiry.userNavigatesToTheBankSummary(BalanceEnquiry.java:48) expected:<"B[Sum]mary"> but was:<"B[ankSu]mary">
+2) expected:<12000.1[3]> but was:<12000.1[2]>
+at BalanceEnquiry.userNavigatesToTheBankSummary(BalanceEnquiry.java:49) expected:<12000.1[3]> but was:<12000.1[2]>
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.assertj.core.api.SoftAssertionError: 
+The following 2 assertions failed:
+1) expected:<"B[Sum]mary"> but was:<"B[ankSu]mary">
+at BalanceEnquiry.userNavigatesToTheBankSummary(BalanceEnquiry.java:48) expected:<"B[Sum]mary"> but was:<"B[ankSu]mary">
+2) expected:<12000.1[3]> but was:<12000.1[2]>
+at BalanceEnquiry.userNavigatesToTheBankSummary(BalanceEnquiry.java:49) expected:<12000.1[3]> but was:<12000.1[2]>
+
+at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:76)
+at org.assertj.core.api.SoftAssertions.assertAll(SoftAssertions.java:134)
+at com.stepDefinitions.BalanceEnquiry.userNavigatesToTheBankSummary(BalanceEnquiry.java:50)
+at ✽.Navigate to Bank Summary Section(file:src/test/resources/features/CheckBalance.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.assertj.core.api.SoftAssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestNGRunner@343f4d3d]" name="runScenario" duration-ms="15" started-at="2019-10-02T07:22:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to opt for extra services provided by the bank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to check the balance linked to their bank account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestNGRunner@343f4d3d]" name="runScenario" duration-ms="12" started-at="2019-10-02T07:22:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to opt for extra services provided by the bank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to check the balance linked to their bank account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestNGRunner@343f4d3d]" name="tearDownClass" is-config="true" duration-ms="170" started-at="2019-10-02T07:22:41Z" finished-at="2019-10-02T07:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestNGRunner -->
+    </test> <!-- MyTests -->
+  </suite> <!-- TestSuite -->
+</testng-results>
